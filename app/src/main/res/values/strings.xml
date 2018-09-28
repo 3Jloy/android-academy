@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">BioApp</string>
+    <string name="app_name">Yury Bezzubikov</string>
+    <string name="bio_photo_description">Bio Photo</string>
+    <string name="logo_of_boom">Logo of boom</string>
+    <string name="backend_developer_of_boom">Backend developer of BOOM</string>
+    <string name="logo_of_biglion">Logo of biglion</string>
+    <string name="backend_developer_of_biglion">Backend developer of Biglion</string>
+    <string name="logo_of_quon">Logo of QUON</string>
+    <string name="full_stack_developer_of_quon">Full stack developer of QUON</string>
+    <string name="bio_description_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="type_your_email_here_hint">Type your email here...</string>
+    <string name="send_message_button_text">Send message</string>
+    <string name="social_button">Social button</string>
 </resources>

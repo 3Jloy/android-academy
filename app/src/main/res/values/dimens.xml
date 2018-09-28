@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bio_photo_height">250dp</dimen>
+    <dimen name="skill_logo_width">24dp</dimen>
+    <dimen name="skill_logo_height">24dp</dimen>
+    <dimen name="skill_logo_margin_start">50dp</dimen>
+
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="top_separator_height">1dp</dimen>
+    <dimen name="bottom_separator_height">2dp</dimen>
+    <dimen name="edit_text_height">64dp</dimen>
+    <dimen name="margin_normal">8dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="social_icon_width">32dp</dimen>
+</resources>

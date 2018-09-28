@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:fillViewport="true">
@@ -11,11 +12,10 @@
         android:orientation="vertical"
         android:paddingBottom="@dimen/margin_normal">
 
-
         <ImageView
             android:id="@+id/bio_image"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/bio_photo_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:contentDescription="@string/bio_photo_description"
             android:src="@drawable/bio_photo"
             android:scaleType="centerCrop"
@@ -26,8 +26,9 @@
             android:id="@+id/boom_logo_image"
             android:layout_width="@dimen/skill_logo_width"
             android:layout_height="@dimen/skill_logo_height"
-            android:layout_below="@id/bio_image"
+            android:layout_toEndOf="@id/bio_image"
             android:layout_marginStart="@dimen/skill_logo_margin_start"
+            android:layout_marginTop="@dimen/margin_normal"
             android:layout_marginBottom="@dimen/margin_normal"
             android:layout_marginEnd="@dimen/margin_normal"
             android:src="@mipmap/ic_launcher"
@@ -37,7 +38,7 @@
             android:id="@+id/boom_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/bio_image"
+            android:layout_alignTop="@id/boom_logo_image"
             android:layout_toEndOf="@id/boom_logo_image"
             android:text="@string/backend_developer_of_boom"
             android:textSize="@dimen/text_size" />
