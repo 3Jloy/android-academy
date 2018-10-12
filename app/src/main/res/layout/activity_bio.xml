@@ -40,6 +40,7 @@
             android:layout_below="@id/bio_image"
             android:layout_toEndOf="@id/boom_logo_image"
             android:text="@string/backend_developer_of_boom"
+            android:layout_marginBottom="@dimen/margin_normal"
             android:textSize="@dimen/text_size" />
 
         <ImageView
@@ -47,8 +48,7 @@
             android:layout_width="@dimen/skill_logo_width"
             android:layout_height="@dimen/skill_logo_height"
             android:layout_alignStart="@id/boom_logo_image"
-            android:layout_below="@id/boom_logo_image"
-            android:layout_marginBottom="@dimen/margin_normal"
+            android:layout_below="@id/boom_text"
             android:src="@mipmap/ic_launcher"
             android:contentDescription="@string/logo_of_biglion" />
 
@@ -58,8 +58,8 @@
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/boom_logo_image"
             android:layout_alignTop="@id/biglion_logo_image"
-            android:layout_below="@id/boom_logo_image"
             android:text="@string/backend_developer_of_biglion"
+            android:layout_marginBottom="@dimen/margin_normal"
             android:textSize="@dimen/text_size" />
 
         <ImageView
@@ -67,7 +67,7 @@
             android:layout_width="@dimen/skill_logo_width"
             android:layout_height="@dimen/skill_logo_height"
             android:layout_alignStart="@id/boom_logo_image"
-            android:layout_below="@id/biglion_logo_image"
+            android:layout_below="@id/biglion_text"
             android:src="@mipmap/ic_launcher"
             android:contentDescription="@string/logo_of_quon" />
 
