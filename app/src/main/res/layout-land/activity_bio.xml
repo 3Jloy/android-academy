@@ -1,168 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:orientation="horizontal">
 
-    <RelativeLayout
+    <ImageView
+        android:id="@+id/bio_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/bio_photo_description"
+        android:src="@drawable/bio_photo"
+        android:layout_marginEnd="@dimen/margin_normal"
+        android:scaleType="centerCrop" />
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/margin_normal">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/bio_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/bio_photo_description"
-            android:src="@drawable/bio_photo"
-            android:scaleType="centerCrop"
-            android:layout_marginBottom="@dimen/margin_large"/>
-
-
-        <ImageView
-            android:id="@+id/boom_logo_image"
-            android:layout_width="@dimen/skill_logo_width"
-            android:layout_height="@dimen/skill_logo_height"
-            android:layout_toEndOf="@id/bio_image"
-            android:layout_marginStart="@dimen/skill_logo_margin_start"
-            android:layout_marginTop="@dimen/margin_normal"
-            android:layout_marginBottom="@dimen/margin_normal"
-            android:layout_marginEnd="@dimen/margin_normal"
-            android:src="@mipmap/ic_launcher"
-            android:contentDescription="@string/logo_of_boom" />
-
-        <TextView
-            android:id="@+id/boom_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@id/boom_logo_image"
-            android:layout_toEndOf="@id/boom_logo_image"
-            android:text="@string/backend_developer_of_boom"
-            android:textSize="@dimen/text_size" />
-
-        <ImageView
-            android:id="@+id/biglion_logo_image"
-            android:layout_width="@dimen/skill_logo_width"
-            android:layout_height="@dimen/skill_logo_height"
-            android:layout_alignStart="@id/boom_logo_image"
-            android:layout_below="@id/boom_logo_image"
-            android:layout_marginBottom="@dimen/margin_normal"
-            android:src="@mipmap/ic_launcher"
-            android:contentDescription="@string/logo_of_biglion" />
-
-        <TextView
-            android:id="@+id/biglion_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/boom_logo_image"
-            android:layout_alignTop="@id/biglion_logo_image"
-            android:layout_below="@id/boom_logo_image"
-            android:text="@string/backend_developer_of_biglion"
-            android:textSize="@dimen/text_size" />
-
-        <ImageView
-            android:id="@+id/quon_logo_image"
-            android:layout_width="@dimen/skill_logo_width"
-            android:layout_height="@dimen/skill_logo_height"
-            android:layout_alignStart="@id/boom_logo_image"
-            android:layout_below="@id/biglion_logo_image"
-            android:src="@mipmap/ic_launcher"
-            android:contentDescription="@string/logo_of_quon" />
-
-        <TextView
-            android:id="@+id/quon_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/boom_logo_image"
-            android:layout_alignTop="@id/quon_logo_image"
-            android:text="@string/full_stack_developer_of_quon"
-            android:layout_marginBottom="@dimen/margin_large"
-            android:textSize="@dimen/text_size" />
-
-        <View
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/top_separator_height"
-            android:layout_above="@id/bio_text"
-            android:background="@color/color_blue"
-            android:layout_alignStart="@id/boom_logo_image"/>
-
-        <TextView
-            android:id="@+id/bio_text"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_normal"
-            android:layout_marginBottom="@dimen/margin_normal"
-            android:layout_alignStart="@id/boom_logo_image"
-            android:layout_below="@id/quon_text"
-            android:text="@string/bio_description_text"
-            android:textSize="@dimen/text_size" />
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_normal">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/bottom_separator_height"
-            android:layout_below="@id/bio_text"
-            android:background="@color/color_blue"
-            android:layout_alignStart="@id/boom_logo_image" />
 
-        <EditText
-            android:id="@+id/message_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/edit_text_height"
-            android:layout_below="@id/bio_text"
-            android:layout_alignStart="@id/boom_logo_image"
-            android:layout_marginBottom="@dimen/margin_normal"
-            android:layout_marginTop="@dimen/margin_normal"
-            android:hint="@string/type_your_email_here_hint"
-            android:inputType="text" />
+            <ImageView
+                android:id="@+id/boom_logo_image"
+                android:layout_width="@dimen/skill_logo_width"
+                android:layout_height="@dimen/skill_logo_height"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:src="@mipmap/ic_launcher"
+                android:contentDescription="@string/logo_of_boom" />
 
-        <Button
-            android:id="@+id/send_email_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@id/message_edit_text"
-            android:layout_marginBottom="@dimen/margin_large"
-            android:text="@string/send_message_button_text"
-            android:textSize="@dimen/text_size"
-            android:textColor="@color/color_white"
-            android:background="@color/color_blue"
-            android:padding="@dimen/margin_normal"/>
+            <TextView
+                android:id="@+id/boom_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/boom_logo_image"
+                android:layout_toEndOf="@id/boom_logo_image"
+                android:text="@string/backend_developer_of_boom"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:textSize="@dimen/text_size" />
 
-        <ImageView
-            android:layout_width="@dimen/social_icon_width"
-            android:layout_height="@dimen/social_icon_width"
-            android:layout_toStartOf="@id/social_icon_center"
-            android:layout_below="@id/send_email_button"
-            android:layout_alignBottom="@id/social_icon_center"
-            android:scaleType="fitEnd"
-            android:src="@mipmap/ic_launcher_round"
-            android:contentDescription="@string/social_button" />
+            <ImageView
+                android:id="@+id/biglion_logo_image"
+                android:layout_width="@dimen/skill_logo_width"
+                android:layout_height="@dimen/skill_logo_height"
+                android:layout_alignStart="@id/boom_logo_image"
+                android:layout_below="@id/boom_text"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:src="@mipmap/ic_launcher"
+                android:contentDescription="@string/logo_of_biglion" />
 
-        <ImageView
-            android:id="@+id/social_icon_center"
-            android:layout_width="@dimen/social_icon_width"
-            android:layout_height="@dimen/social_icon_width"
-            android:layout_below="@id/send_email_button"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            android:scaleType="fitEnd"
-            android:layout_marginEnd="@dimen/margin_normal"
-            android:layout_marginStart="@dimen/margin_normal"
-            android:src="@mipmap/ic_launcher_round"
-            android:contentDescription="@string/social_button"/>
+            <TextView
+                android:id="@+id/biglion_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/boom_logo_image"
+                android:layout_alignTop="@id/biglion_logo_image"
+                android:layout_below="@id/boom_logo_image"
+                android:text="@string/backend_developer_of_biglion"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:textSize="@dimen/text_size" />
 
-        <ImageView
-            android:layout_width="@dimen/social_icon_width"
-            android:layout_height="@dimen/social_icon_width"
-            android:layout_toEndOf="@id/social_icon_center"
-            android:layout_below="@id/send_email_button"
-            android:src="@mipmap/ic_launcher_round"
-            android:layout_alignBottom="@id/social_icon_center"
-            android:scaleType="fitEnd"
-            android:contentDescription="@string/social_button"/>
+            <ImageView
+                android:id="@+id/quon_logo_image"
+                android:layout_width="@dimen/skill_logo_width"
+                android:layout_height="@dimen/skill_logo_height"
+                android:layout_alignStart="@id/boom_logo_image"
+                android:layout_below="@id/biglion_text"
+                android:src="@mipmap/ic_launcher"
+                android:contentDescription="@string/logo_of_quon" />
 
-    </RelativeLayout>
-</ScrollView>
+            <TextView
+                android:id="@+id/quon_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/boom_logo_image"
+                android:layout_alignTop="@id/quon_logo_image"
+                android:text="@string/full_stack_developer_of_quon"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:textSize="@dimen/text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_separator_height"
+                android:layout_above="@id/bio_text"
+                android:background="@color/color_blue"
+                android:layout_alignStart="@id/boom_logo_image"/>
+
+            <TextView
+                android:id="@+id/bio_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:layout_alignStart="@id/boom_logo_image"
+                android:layout_below="@id/quon_text"
+                android:text="@string/bio_description_text"
+                android:textSize="@dimen/text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bottom_separator_height"
+                android:layout_below="@id/bio_text"
+                android:background="@color/color_blue"
+                android:layout_alignStart="@id/boom_logo_image" />
+
+            <EditText
+                android:id="@+id/message_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_below="@id/bio_text"
+                android:layout_alignStart="@id/boom_logo_image"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:hint="@string/type_your_email_here_hint"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/send_email_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/message_edit_text"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:text="@string/send_message_button_text"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/color_white"
+                android:background="@color/color_blue"
+                android:padding="@dimen/margin_normal"/>
+
+            <ImageView
+                android:layout_width="@dimen/social_icon_width"
+                android:layout_height="@dimen/social_icon_width"
+                android:layout_toStartOf="@id/social_icon_center"
+                android:layout_below="@id/send_email_button"
+                android:layout_alignBottom="@id/social_icon_center"
+                android:scaleType="fitEnd"
+                android:src="@mipmap/ic_launcher_round"
+                android:contentDescription="@string/social_button" />
+
+            <ImageView
+                android:id="@+id/social_icon_center"
+                android:layout_width="@dimen/social_icon_width"
+                android:layout_height="@dimen/social_icon_width"
+                android:layout_below="@id/send_email_button"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:scaleType="fitEnd"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:layout_marginStart="@dimen/margin_normal"
+                android:src="@mipmap/ic_launcher_round"
+                android:contentDescription="@string/social_button"/>
+
+            <ImageView
+                android:layout_width="@dimen/social_icon_width"
+                android:layout_height="@dimen/social_icon_width"
+                android:layout_toEndOf="@id/social_icon_center"
+                android:layout_below="@id/send_email_button"
+                android:src="@mipmap/ic_launcher_round"
+                android:layout_alignBottom="@id/social_icon_center"
+                android:scaleType="fitEnd"
+                android:contentDescription="@string/social_button"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

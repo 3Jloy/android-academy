@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Yury Bezzubikov</string>
+    <string name="bio_photo_description">Фото</string>
+    <string name="logo_of_boom">Логотип компании BOOM</string>
+    <string name="backend_developer_of_boom">Серверный разработчик приложения BOOM</string>
+    <string name="logo_of_biglion">Логотип компании Biglion</string>
+    <string name="backend_developer_of_biglion">Серверный разработчик компании BIglion</string>
+    <string name="logo_of_quon">Логотип компании QUON</string>
+    <string name="full_stack_developer_of_quon">Разработчик сервиса QUON</string>
+    <string name="type_your_email_here_hint">Введите ваш email</string>
+    <string name="send_message_button_text">Отправить сообщение</string>
+    <string name="social_button">Социальные сети</string>
+    <string name="bio_description_text">Lorem Ipsum - это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной \"рыбой\" для текстов на латинице с начала XVI века.</string>
+</resources>
