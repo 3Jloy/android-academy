@@ -8,4 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Toolbar">
+        <item name="titleTextAppearance">@style/TextAppearance.Widget.AppCompat.Title</item>
+    </style>
+
+    <style name="TextAppearance.Widget.AppCompat.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">#fff</item>
+    </style>
+
 </resources>
